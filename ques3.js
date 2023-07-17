@@ -31,7 +31,7 @@ console.log("End");
 // Explanation:
 
 // The above code will log the following
-/*
+/**
     Start
     End
     Timeout
@@ -40,8 +40,7 @@ console.log("End");
     Promise 2 resolved
 */
 
-/*
-
+/**
     first the normal "Start" will be called and as this will be not delayed by any means so it will be printed immediately
     then the javascript will go to next line but it will be delayed because of "setTimeout" as it sees the setTimeout it will be going to call stack from there the javascript will go to next line
     there it will see the Promise so it immediately returns a "Promise{ <pending> }" which will be executed after we call .then() method on the promise
@@ -53,5 +52,4 @@ console.log("End");
     first it will print "Promise 3 resolved" because it has lesser timeout than promise1 and promise2
     then "Promise 1 resolved" because it has lesser timeout than promise2
     then at last "Promise 2 resolved"
-
-*/
+ */
